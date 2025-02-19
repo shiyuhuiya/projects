@@ -1,0 +1,1217 @@
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>projects</title>
+	<style type="text/css">
+		
+[data-color-mode*='light'], [data-color-mode*='light'] body, .markdown-body[theme*='light'] {
+  --color-prettylights-syntax-comment: #6e7781;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-entity: #8250df;
+  --color-prettylights-syntax-storage-modifier-import: #24292f;
+  --color-prettylights-syntax-entity-tag: #116329;
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-variable: #953800;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+  --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-italic: #24292f;
+  --color-prettylights-syntax-markup-bold: #24292f;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-deleted-bg: #FFEBE9;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-fg-default: #24292f;
+  --color-fg-muted: #57606a;
+  --color-fg-subtle: #6e7781;
+  --color-canvas-default: #ffffff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-border-default: #d0d7de;
+  --color-border-muted: hsla(210,18%,87%,1);
+  --color-neutral-muted: rgba(175,184,193,0.2);
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-attention-subtle: #fff8c5;
+  --color-danger-fg: #cf222e;
+}
+[data-color-mode*='dark'], [data-color-mode*='dark'] body, .markdown-body[theme*='dark'] {
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #7ee787;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa657;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #7ee787;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+  --color-prettylights-syntax-markup-inserted-bg: #033a16;
+  --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+  --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+  --color-fg-default: #c9d1d9;
+  --color-fg-muted: #8b949e;
+  --color-fg-subtle: #484f58;
+  --color-canvas-default: #0d1117;
+  --color-canvas-subtle: #161b22;
+  --color-border-default: #30363d;
+  --color-border-muted: #21262d;
+  --color-neutral-muted: rgba(110,118,129,0.4);
+  --color-accent-fg: #58a6ff;
+  --color-accent-emphasis: #1f6feb;
+  --color-attention-subtle: rgba(187,128,9,0.15);
+  --color-danger-fg: #f85149;
+}
+
+.markdown-body {
+  display: block;
+  -webkit-text-size-adjust: 100%;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  color: var(--color-fg-default);
+  background-color: var(--color-canvas-default);
+}
+
+.markdown-body details,
+.markdown-body figcaption,
+.markdown-body figure {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body [hidden] {
+  display: none !important;
+}
+
+.markdown-body a {
+  background-color: transparent;
+  color: var(--color-accent-fg);
+  text-decoration: none;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body abbr[title] {
+  border-bottom: none;
+  text-decoration: underline dotted;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body dfn {
+  font-style: italic;
+}
+
+.markdown-body h1 {
+  margin: .67em 0;
+  font-weight: 600;
+  padding-bottom: .3em;
+  font-size: 2em;
+  border-bottom: 1px solid var(--color-border-muted);
+}
+
+.markdown-body mark {
+  background-color: var(--color-attention-subtle);
+  color: var(--color-text-primary);
+}
+
+.markdown-body small {
+  font-size: 90%;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body sup {
+  top: -0.5em;
+}
+
+.markdown-body img {
+  border-style: none;
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: var(--color-canvas-default);
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body figure {
+  margin: 1em 40px;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  overflow: hidden;
+  background: transparent;
+  border-bottom: 1px solid var(--color-border-muted);
+  height: .25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: var(--color-border-default);
+  border: 0;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+  overflow: visible;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body [type=button],
+.markdown-body [type=reset],
+.markdown-body [type=submit] {
+  -webkit-appearance: button;
+}
+
+.markdown-body [type=button]::-moz-focus-inner,
+.markdown-body [type=reset]::-moz-focus-inner,
+.markdown-body [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.markdown-body [type=button]:-moz-focusring,
+.markdown-body [type=reset]:-moz-focusring,
+.markdown-body [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+.markdown-body [type=checkbox],
+.markdown-body [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body [type=number]::-webkit-inner-spin-button,
+.markdown-body [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.markdown-body [type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+.markdown-body [type=search]::-webkit-search-cancel-button,
+.markdown-body [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.markdown-body ::-webkit-input-placeholder {
+  color: inherit;
+  opacity: .54;
+}
+
+.markdown-body ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body hr::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body details:not([open])>*:not(summary) {
+  display: none !important;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  line-height: 10px;
+  color: var(--color-fg-default);
+  vertical-align: middle;
+  background-color: var(--color-canvas-subtle);
+  border: solid 1px var(--color-neutral-muted);
+  border-bottom-color: var(--color-neutral-muted);
+  border-radius: 6px;
+  box-shadow: inset 0 -1px 0 var(--color-neutral-muted);
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h2 {
+  font-weight: 600;
+  padding-bottom: .3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid var(--color-border-muted);
+}
+
+.markdown-body h3 {
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-weight: 600;
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  font-weight: 600;
+  font-size: .85em;
+  color: var(--color-fg-muted);
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+  padding: 0 1em;
+  color: var(--color-fg-muted);
+  border-left: .25em solid var(--color-border-default);
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body tt,
+.markdown-body code {
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  font-size: 12px;
+  word-wrap: normal;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-body ::placeholder {
+  color: var(--color-fg-subtle);
+  opacity: 1;
+}
+
+.markdown-body input::-webkit-outer-spin-button,
+.markdown-body input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.markdown-body .token.comment, .markdown-body .token.prolog, .markdown-body .token.doctype, .markdown-body .token.cdata {
+  color: var(--color-prettylights-syntax-comment);
+}
+.markdown-body .token.namespace { opacity: 0.7; }
+.markdown-body .token.tag, .markdown-body .token.selector, .markdown-body .token.constant, .markdown-body .token.symbol, .markdown-body .token.deleted {
+  color: var(--color-prettylights-syntax-entity-tag);
+}
+.markdown-body .token.maybe-class-name {
+  color: var(--color-prettylights-syntax-variable);
+}
+.markdown-body .token.property-access, .markdown-body .token.operator, .markdown-body .token.boolean, .markdown-body .token.number, .markdown-body .token.selector .markdown-body .token.class, .markdown-body .token.attr-name, .markdown-body .token.string, .markdown-body .token.char, .markdown-body .token.builtin {
+  color: var(--color-prettylights-syntax-constant);
+}
+
+.markdown-body .token.deleted {
+  color: var(--color-prettylights-syntax-markup-deleted-text);
+}
+.markdown-body .token.property {
+  color: var(--color-prettylights-syntax-constant);
+}
+.markdown-body .token.punctuation {
+  color: var(--color-prettylights-syntax-markup-bold);
+}
+.markdown-body .token.function {
+  color: var(--color-prettylights-syntax-entity);
+}
+.markdown-body .code-line .token.deleted {
+  background-color: var(--color-prettylights-syntax-markup-deleted-bg);
+}
+.markdown-body .token.inserted {
+  color: var(--color-prettylights-syntax-markup-inserted-text);
+}
+.markdown-body .code-line .token.inserted {
+  background-color: var(--color-prettylights-syntax-markup-inserted-bg);
+}
+
+.markdown-body .token.variable {
+  color: var(--color-prettylights-syntax-constant);
+}
+.markdown-body .token.entity, .markdown-body .token.url, .language-css .markdown-body .token.string, .style .markdown-body .token.string {
+  color: var(--color-prettylights-syntax-string);
+}
+.markdown-body .token.color, .markdown-body .token.atrule, .markdown-body .token.attr-value, .markdown-body .token.function, .markdown-body .token.class-name {
+  color: var(--color-prettylights-syntax-string);
+}
+.markdown-body .token.rule, .markdown-body .token.regex, .markdown-body .token.important, .markdown-body .token.keyword {
+  color: var(--color-prettylights-syntax-keyword);
+}
+.markdown-body .token.coord {
+  color: var(--color-prettylights-syntax-meta-diff-range);
+}
+.markdown-body .token.important, .markdown-body .token.bold { font-weight: bold; }
+.markdown-body .token.italic { font-style: italic; }
+.markdown-body .token.entity { cursor: help; }
+
+.markdown-body [data-catalyst] {
+  display: block;
+}
+
+.markdown-body g-emoji {
+  font-family: "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 1em;
+  font-style: normal !important;
+  font-weight: 400;
+  line-height: 1;
+  vertical-align: -0.075em;
+}
+
+.markdown-body g-emoji img {
+  width: 1em;
+  height: 1em;
+}
+
+.markdown-body::before {
+  display: table;
+  content: "";
+}
+
+.markdown-body::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .absent {
+  color: var(--color-danger-fg);
+}
+
+.markdown-body a.anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+
+.markdown-body a.anchor:focus {
+  outline: none;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body details {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body sup>a::before {
+  content: "[";
+}
+
+.markdown-body sup>a::after {
+  content: "]";
+}
+
+.markdown-body .octicon-video {
+  border: 1px solid #d0d7de !important;
+  border-radius: 6px !important;
+  display: block;
+}
+
+.markdown-body .octicon-video summary {
+    border-bottom: 1px solid #d0d7de !important;
+    padding: 8px 16px !important;
+    cursor: pointer;
+}
+
+.markdown-body .octicon-video > video {
+    display: block !important;
+    max-width: 100% !important;
+    padding: 2px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+}
+
+.markdown-body details.octicon-video:not([open])>*:not(summary) {
+    display: none !important;
+}
+
+.markdown-body details.octicon-video:not([open]) > summary {
+    border-bottom: 0 !important;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: var(--color-fg-default);
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 tt,
+.markdown-body h1 code,
+.markdown-body h2 tt,
+.markdown-body h2 code,
+.markdown-body h3 tt,
+.markdown-body h3 code,
+.markdown-body h4 tt,
+.markdown-body h4 code,
+.markdown-body h5 tt,
+.markdown-body h5 code,
+.markdown-body h6 tt,
+.markdown-body h6 code {
+  padding: 0 .2em;
+  font-size: inherit;
+}
+
+.markdown-body ul.no-list,
+.markdown-body ol.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.markdown-body ol[type="1"] {
+  list-style-type: decimal;
+}
+
+.markdown-body ol[type=a] {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body ol[type=i] {
+  list-style-type: lower-roman;
+}
+
+.markdown-body div>ol:not([type]) {
+  list-style-type: decimal;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid var(--color-border-default);
+}
+
+.markdown-body table tr {
+  background-color: var(--color-canvas-default);
+  border-top: 1px solid var(--color-border-muted);
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: var(--color-canvas-subtle);
+}
+
+.markdown-body table img {
+  background-color: transparent;
+  vertical-align: middle;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body .emoji {
+  max-width: none;
+  vertical-align: text-top;
+  background-color: transparent;
+}
+
+.markdown-body span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+.markdown-body span.frame>span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border-default);
+}
+
+.markdown-body span.frame span img {
+  display: block;
+  float: left;
+}
+
+.markdown-body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: var(--color-fg-default);
+}
+
+.markdown-body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.markdown-body span.align-center>span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.markdown-body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.markdown-body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.markdown-body span.align-right>span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.markdown-body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+.markdown-body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+
+.markdown-body span.float-left span {
+  margin: 13px 0 0;
+}
+
+.markdown-body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+
+.markdown-body span.float-right>span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.markdown-body code,
+.markdown-body tt {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: var(--color-neutral-muted);
+  border-radius: 6px;
+}
+
+.markdown-body code br,
+.markdown-body tt br {
+  display: none;
+}
+
+.markdown-body del code {
+  text-decoration: inherit;
+}
+
+.markdown-body pre code {
+  font-size: 100%;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body pre {
+  position: relative;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: var(--color-canvas-subtle);
+  border-radius: 6px;
+}
+
+.markdown-body pre code,
+.markdown-body pre tt {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre > code {
+  padding: 16px;
+  overflow: auto;
+  display: block;
+}
+
+.markdown-body .csv-data td,
+.markdown-body .csv-data th {
+  padding: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.markdown-body .csv-data .blob-num {
+  padding: 10px 8px 9px;
+  text-align: right;
+  background: var(--color-canvas-default);
+  border: 0;
+}
+
+.markdown-body .csv-data tr {
+  border-top: 0;
+}
+
+.markdown-body .csv-data th {
+  font-weight: 600;
+  background: var(--color-canvas-subtle);
+  border-top: 0;
+}
+
+.markdown-body .footnotes {
+  font-size: 12px;
+  color: var(--color-fg-muted);
+  border-top: 1px solid var(--color-border-default);
+}
+
+.markdown-body .footnotes ol {
+  padding-left: 16px;
+}
+
+.markdown-body .footnotes li {
+  position: relative;
+}
+
+.markdown-body .footnotes li:target::before {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -24px;
+  pointer-events: none;
+  content: "";
+  border: 2px solid var(--color-accent-emphasis);
+  border-radius: 6px;
+}
+
+.markdown-body .footnotes li:target {
+  color: var(--color-fg-default);
+}
+
+.markdown-body .footnotes .data-footnote-backref g-emoji {
+  font-family: monospace;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item label {
+  font-weight: 400;
+}
+
+.markdown-body .task-list-item.enabled label {
+  cursor: pointer;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item .handle {
+  display: none;
+}
+
+.markdown-body .task-list-item-checkbox,
+.markdown-body input[type="checkbox"] {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .contains-task-list:dir(rtl) .task-list-item-checkbox,
+.markdown-body .contains-task-list:dir(rtl) input[type="checkbox"] {
+  margin: 0 -1.6em .25em .2em;
+}
+
+.markdown-body ::-webkit-calendar-picker-indicator {
+  filter: invert(50%);
+}
+body {padding: 2em;}
+	</style>
+  </head>
+  <body>
+  <div class="markdown-body">
+<h1>智慧商城</h1>
+<p>emm，看黑马vue视频跟着做的vue2项目，应该只能算是练手项目。</p>
+<p>一个基于vue2，axiso和vant2开发的<strong>移动商城</strong>项目</p>
+<p>链接：<a href="https://projects.sanye.blog/wisdomShop">https://projects.sanye.blog/wisdomShop</a></p>
+<h1>小兔鲜</h1>
+<h2>介绍</h2>
+<p>itheima的vue3项目</p>
+<p>链接：<a href="https://projects.sanye.blog/rabbit">https://projects.sanye.blog/rabbit</a></p>
+<h2>项目结构</h2>
+<ul>
+<li>布局（layout）页面：
+<ul>
+<li>home页面</li>
+<li>一级分类页面</li>
+<li>二级分类页面</li>
+<li>商品详情页面</li>
+<li>购物车页面</li>
+<li>订单页面</li>
+<li>支付页面</li>
+<li>会员页面</li>
+</ul>
+</li>
+<li>登录页面（login）</li>
+</ul>
+<h3><strong>布局页面</strong></h3>
+<p>布局页面除了有一个<code>router-view</code>来防止其他二级页面组件，还要一些固定不变的组件，其中比较有意思的就是<code>fixedNav</code>，监听页面滚动事件，当滚动一定值后，让<code>fixedNav</code>显示出来。还有就是Nav组件的购物车图标，鼠标放到上面会显示购物车列表，这个效果实现核心如下：</p>
+<pre class="language-css"><code class="language-css code-highlight"><span class="code-line line-number" line="1"><span class="token selector"><span class="token class">.layer</span></span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">   <span class="token property">transform-origin</span><span class="token punctuation">:</span> top<span class="token punctuation">;</span>//变换的中心是top
+</span><span class="code-line line-number" line="3">   <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>//x轴不变，y轴缩放为<span class="token number">0</span>
+</span><span class="code-line line-number" line="4">   <span class="token property">transition</span><span class="token punctuation">:</span> all <span class="token number">0.4</span><span class="token unit">s</span> <span class="token number">0.2</span><span class="token unit">s</span><span class="token punctuation">;</span>//添加过渡，过渡事件是<span class="token number">0.4</span><span class="token unit">s</span>，延迟<span class="token number">0.2</span>秒开始动画
+</span><span class="code-line line-number" line="5"><span class="token punctuation">}</span>
+</span></code></pre>
+<p>然后鼠标放到购物车图标后令<code>transform: none</code></p>
+<p>同时还对删除购物车商品做了动画效果，道理也是一样的。</p>
+<pre class="language-css"><code class="language-css code-highlight"><span class="code-line line-number" line="1"><span class="token selector"><span class="token class">.del</span></span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token property">transform-origin</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="3">  <span class="token property">transform</span><span class="token punctuation">:</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="code-line line-number" line="4"><span class="token punctuation">}</span>
+</span></code></pre>
+<p>因为这些组件只会在layout页面中用到，所以被放到<code>layout/components</code>目录下。</p>
+<p>虽然说一个页面对应一个组件，但是为了降低项目的耦合度，把一个页面分解为多个组件才比较合理。</p>
+<h3><strong>home页面</strong></h3>
+<p>home页面无非就是通过api获取数据然后渲染页面，逻辑较为简单。</p>
+<h3><strong>商品详情页面</strong></h3>
+<p>商品详情页面（detail）页面，比较有意思的地方就是，使用组件内的<code>beforeRouteUpdate</code>路由守卫解决了路由跳转，但是组件被复用，导致的页面不刷新问题。还要一个难点就是放大镜，感觉就是在炫技；其中的小图片部分也很有意思：</p>
+<pre class="language-html"><code class="language-html code-highlight"><span class="code-line line-number" line="1"> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>small-image<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</span><span class="code-line line-number" line="2">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span>
+</span></span><span class="code-line line-number" line="3"><span class="token tag">         <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>(item, index) in picList<span class="token punctuation">"</span></span>
+</span></span><span class="code-line line-number" line="4"><span class="token tag">         <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>index<span class="token punctuation">"</span></span>
+</span></span><span class="code-line line-number" line="5"><span class="token tag">         <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{ active: index === activeIndex }<span class="token punctuation">"</span></span>
+</span></span><span class="code-line line-number" line="6"><span class="token tag">         <span class="token attr-name">@mouseover</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>activeIndex = index<span class="token punctuation">"</span></span>
+</span></span><span class="code-line line-number" line="7"><span class="token tag">    <span class="token punctuation">&gt;</span></span>
+</span><span class="code-line line-number" line="8">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">:src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+</span><span class="code-line line-number" line="9">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+</span><span class="code-line line-number" line="10"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</span></code></pre>
+<p>可以看出，监听<code>li</code>的<code>mouseover</code>事件，这是一个dom原生事件，监听对象也确实是个dom对象，就好比：</p>
+<pre class="language-html"><code class="language-html code-highlight"><span class="code-line line-number" line="1"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">@input</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>(e)=&gt;{console.log(e.target.value)}<span class="token punctuation">'</span></span><span class="token punctuation">&gt;</span></span>
+</span></code></pre>
+<p>还后就是具体的放大镜部分，项目中使用的是<code>vueuse</code>的api，但是要是面试问这个问的肯定是自己如何实现。</p>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token comment">//捕获要检测对象</span>
+</span><span class="code-line line-number" line="2"><span class="token keyword">const</span> target <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token keyword null nil">null</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="3"><span class="token comment">//数据是响应式的</span>
+</span><span class="code-line line-number" line="4"><span class="token keyword">function</span> <span class="token function">mouseInElement</span><span class="token punctuation">(</span><span class="token parameter">target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="5">  <span class="token function">onMounted</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="6">    target<span class="token punctuation">.</span><span class="token property-access">value</span><span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span><span class="token string">'mousemove'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="7">      <span class="token keyword">const</span> rect <span class="token operator">=</span> target<span class="token punctuation">.</span><span class="token property-access">value</span><span class="token punctuation">.</span><span class="token method function property-access">getBoundingClientRect</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="8">      <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span><span class="token property-access">clientX</span> <span class="token operator">-</span> rect<span class="token punctuation">.</span><span class="token property-access">left</span><span class="token punctuation">,</span> e<span class="token punctuation">.</span><span class="token property-access">clientY</span> <span class="token operator">-</span> rect<span class="token punctuation">.</span><span class="token property-access">top</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="9">    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="10">    target<span class="token punctuation">.</span><span class="token property-access">value</span><span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span><span class="token string">'mouseleave'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="11">      <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'出去了'</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="12">    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="13">  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="14"><span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="15"><span class="token function">mouseInElement</span><span class="token punctuation">(</span>target<span class="token punctuation">)</span>
+</span></code></pre>
+<ul>
+<li><strong><code>e.clientX</code></strong>：表示鼠标指针相对于<strong>浏览器视口左边界</strong>的水平距离</li>
+<li><strong><code>e.clientY</code></strong>：表示鼠标指针相对于<strong>浏览器视口顶部</strong>的垂直距离</li>
+</ul>
+<p>调用一个dom元素的<code>getBoundingClientRect()</code>方法，会返回一个domrect对象。</p>
+<p>总之就是通过实时获取鼠标在dom元素中的位置，来不断修改放大镜组件中的背景图片的位置。</p>
+<p>还有一个组件就是<strong>商品规格组件</strong>，选择用户选择了特定的商品规格就会导出一个规格对象，但是这个组件实现的原理如何，没有去了解。</p>
+<h3><strong>一级，二级分类页面</strong></h3>
+<p>一级分类页面就是通过ajax请求获取数据然后渲染页面，没什么好说的；二级分类页面的特点就是实现了<strong>按条件筛选商品</strong>，并且借助elementplus提供的全局指令<code>v-infinite-scroll</code>实现了商品列表的无限滚动：</p>
+<pre class="language-html"><code class="language-html code-highlight"><span class="code-line line-number" line="1"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span>
+</span></span><span class="code-line line-number" line="2"><span class="token tag">  <span class="token attr-name">v-infinite-scroll</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>load<span class="token punctuation">"</span></span>
+</span></span><span class="code-line line-number" line="3"><span class="token tag">  <span class="token attr-name">:infinite-scroll-disabled</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>disabled<span class="token punctuation">"</span></span>
+</span></span><span class="code-line line-number" line="4"><span class="token tag">  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>body<span class="token punctuation">"</span></span>
+</span></span><span class="code-line line-number" line="5"><span class="token tag"><span class="token punctuation">&gt;</span></span>
+</span><span class="code-line line-number" line="6">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item in list<span class="token punctuation">"</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item.id<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</span><span class="code-line line-number" line="7">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>router-link</span> <span class="token attr-name">:to</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>`/detail/${item.id}`<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</span><span class="code-line line-number" line="8">      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">v-lazy-load</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>item.picture<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+</span><span class="code-line line-number" line="9">      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name ellipsis<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>{{ item.name }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</span><span class="code-line line-number" line="10">      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>desc ellipsis<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>{{ item.desc }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</span><span class="code-line line-number" line="11">      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>price<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>{{ item.price }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</span><span class="code-line line-number" line="12">    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>router-link</span><span class="token punctuation">&gt;</span></span>
+</span><span class="code-line line-number" line="13">  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+</span><span class="code-line line-number" line="14"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</span></code></pre>
+<p>如果面试要问肯定就是问这个指令的实现原理，就是监听ul的触底事件，然后修改查询参数（page++），发送请求获取新的商品数据，与原来旧的数据拼接。</p>
+<h3><strong>登录页面</strong></h3>
+<p>登录页面使用elementplus提供的<code>el-form</code>组件简化了表单校验的过程，如果需要手动实现的话，考察的只是就是<code>正则表达式</code>了。</p>
+<p>每个表单项可以对应多个校验规则。</p>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token keyword">const</span> rules <span class="token operator">=</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token literal-property property">account</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+</span><span class="code-line line-number" line="3">    <span class="token punctuation">{</span> <span class="token literal-property property">required</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'用户名不能为空'</span><span class="token punctuation">,</span> <span class="token literal-property property">trigger</span><span class="token operator">:</span> <span class="token string">'blur'</span> <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="4">  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="5">  <span class="token literal-property property">password</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+</span><span class="code-line line-number" line="6">    <span class="token punctuation">{</span> <span class="token literal-property property">required</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'请输入密码'</span><span class="token punctuation">,</span> <span class="token literal-property property">trigger</span><span class="token operator">:</span> <span class="token string">'blur'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="7">    <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="8">      <span class="token literal-property property">pattern</span><span class="token operator">:</span> <span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex"><span class="token anchor function">^</span><span class="token char-set class-name">\S</span><span class="token quantifier number">{6,15}</span><span class="token anchor function">$</span></span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span><span class="token comment">//正则表达式</span>
+</span><span class="code-line line-number" line="9">      <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'密码必须是6-15位的非空字符'</span><span class="token punctuation">,</span> <span class="token comment">//提示的消息</span>
+</span><span class="code-line line-number" line="10">      <span class="token literal-property property">trigger</span><span class="token operator">:</span> <span class="token string">'blur'</span> <span class="token comment">//触发表单校验的方式是光标消失</span>
+</span><span class="code-line line-number" line="11">    <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="12">  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="13">  <span class="token keyword">private</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+</span><span class="code-line line-number" line="14">    <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="15">      <span class="token comment">//自定义表单校验规则</span>
+</span><span class="code-line line-number" line="16">      <span class="token function-variable function">validator</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token parameter">rule<span class="token punctuation">,</span> value<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="17">        <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>formModel<span class="token punctuation">.</span><span class="token property-access">value</span><span class="token punctuation">.</span><span class="token property-access">checked</span> <span class="token operator">==</span> <span class="token boolean">false</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="18">          <span class="token function">callback</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'请勾选协议！'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="19">        <span class="token punctuation">}</span> <span class="token keyword control-flow">else</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="20">          <span class="token function">callback</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="21">        <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="22">      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</span><span class="code-line line-number" line="23">      <span class="token literal-property property">trigger</span><span class="token operator">:</span> <span class="token string">'change'</span> <span class="token comment">//触发validator方式是表单的值改变</span>
+</span><span class="code-line line-number" line="24">    <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="25">  <span class="token punctuation">]</span>
+</span><span class="code-line line-number" line="26"><span class="token punctuation">}</span>
+</span></code></pre>
+<h3><strong>订单页面</strong></h3>
+<p>比较有意思的就是点击<code>切换</code>配送时间，支付方式等，原理都是一样的：</p>
+<pre class="language-html"><code class="language-html code-highlight"><span class="code-line line-number" line="1"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span>
+</span></span><span class="code-line line-number" line="2"><span class="token tag">  <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>(item, index) in payment<span class="token punctuation">"</span></span>
+</span></span><span class="code-line line-number" line="3"><span class="token tag">  <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>index<span class="token punctuation">"</span></span>
+</span></span><span class="code-line line-number" line="4"><span class="token tag">  <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{ active: activeIndex2 === index }<span class="token punctuation">"</span></span>
+</span></span><span class="code-line line-number" line="5"><span class="token tag">  <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>activeIndex2 = index<span class="token punctuation">"</span></span>
+</span></span><span class="code-line line-number" line="6"><span class="token tag"><span class="token punctuation">&gt;</span></span>{{ item }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+</span></code></pre>
+<h3><strong>支付页面</strong></h3>
+<p>支付页面比较有意思的就是倒计时了吧，借助定时器，每秒让总时间<code>-1</code>，但是这个操作不能对格式化字符串操作，只能对具体的数值操作，所以还需要我们格式化时间，把总的秒数，格式化为<code>分:秒</code>的形式。要实现这一点，我们还借助了<code>dayjs库</code>来格式化时间，还有<code>计算属性</code>，每当总秒数改变，就返回最新的格式化时间。</p>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token keyword module">export</span> <span class="token keyword">const</span> <span class="token function-variable function">countDown</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="2">  <span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">useRouter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="3">  <span class="token keyword">const</span> <span class="token maybe-class-name">Time</span> <span class="token operator">=</span> <span class="token function">ref</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="4">  <span class="token keyword">const</span> formatTime <span class="token operator">=</span> <span class="token function">computed</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> dayjs<span class="token punctuation">.</span><span class="token method function property-access">unix</span><span class="token punctuation">(</span><span class="token maybe-class-name">Time</span><span class="token punctuation">.</span><span class="token property-access">value</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">format</span><span class="token punctuation">(</span><span class="token string">'mm分ss秒'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="5">  <span class="token keyword">const</span> <span class="token function-variable function">start</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">time</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="6">    <span class="token maybe-class-name">Time</span><span class="token punctuation">.</span><span class="token property-access">value</span> <span class="token operator">=</span> time
+</span><span class="code-line line-number" line="7">    <span class="token keyword">let</span> n <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="8">      <span class="token maybe-class-name">Time</span><span class="token punctuation">.</span><span class="token property-access">value</span><span class="token operator">--</span>
+</span><span class="code-line line-number" line="9">      <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span><span class="token maybe-class-name">Time</span><span class="token punctuation">.</span><span class="token property-access">value</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="10">        <span class="token function">clearInterval</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span> <span class="token comment">//关闭定时器</span>
+</span><span class="code-line line-number" line="11">        <span class="token maybe-class-name">ElMessage</span><span class="token punctuation">.</span><span class="token method function property-access">error</span><span class="token punctuation">(</span><span class="token string">'订单超时'</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="12">        router<span class="token punctuation">.</span><span class="token method function property-access">push</span><span class="token punctuation">(</span><span class="token string">'/cartList'</span><span class="token punctuation">)</span> <span class="token comment">//提示订单超时然后跳转到购物车</span>
+</span><span class="code-line line-number" line="13">      <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="14">    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="15">  <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="16">  <span class="token keyword control-flow">return</span> <span class="token punctuation">{</span> formatTime<span class="token punctuation">,</span> start <span class="token punctuation">}</span>
+</span><span class="code-line line-number" line="17"><span class="token punctuation">}</span>
+</span></code></pre>
+<h3><strong>购物车页面</strong></h3>
+<p>在这个项目中，还持久化存储了商品信息，这样即便没有登录，刷新，关闭页面，购物车中的商品数据也不会丢失，支持我们在离线的时候操作购物车。</p>
+<p>只需要在登录的时候，将本地购物车商品数据合并到登录账号下的远程购物车就行。</p>
+<p>当我在这么介绍的时候面试管问我，将商品数据存储在购物车不会有安全问题吗？确实购物车商品数据存储在本地，可以通过js修改商品价格，但是最终订单的生成，是后端通过<code>选中的商品id</code>和<code>对应的商品数量</code>计算得到的，并没有太大的安全问题。</p>
+<h1>咸虾米壁纸</h1>
+<h2>介绍</h2>
+<p>基于vue3+uni-app开发的移动端壁纸应用，点击缩略图能进入到预览页面查看大图。</p>
+<p>但是由于部署到github pages上图片因为跨域加载不出来，就没有部署。</p>
+<h2>项目结构</h2>
+<ul>
+<li>home页面</li>
+<li>分类页面</li>
+</ul>
+<h3>home页面</h3>
+<p>就是发请求获取数据，然后渲染页面；</p>
+<p>页面结构部分就是使用了一些uni-app内置的组件或者扩展的组件，还使用了自己编写的组件，然后使用的语法还是vue的语法，没什么好说的。</p>
+<p>比较新奇的就是使用<code>backdrop-filter:blur()</code>属性做了磨砂效果。然后还使用了<code>渐变色堆叠</code>。</p>
+<h3>category分类页面</h3>
+<p>没啥好说的，就是发请求获取数据然后复用<code>theme-item</code>组件，然后使用<code>grid</code>来布局这个组件，顺便使用uni-app提供的<code>onPullDownRefresh</code>，<code>onReachBottom</code>钩子实现了下拉刷新和触底加载，面试官要问就是问你自己如何实现这个。</p>
+<h3>user页面</h3>
+<p>功能包括<code>显示用户ip</code>，查看我的下载，我的收藏，联系客服等。</p>
+<p>比较有意思的就是如何获取用户ip吧，虽然在这个项目中是后端服务器实现的。</p>
+<h3>wallpaperList页面</h3>
+<p>我的收藏，我的下载，图片搜索等所有需要<strong>展示缩略图</strong>的页面(除了home页面)，复用的都是这个页面（其实就是wallpaperList组件）。</p>
+<p><strong>根据跳转到这个页面传递的参数不同（通过onLoad接收）</strong>，来展示不同的<code>navigationBar</code>，来发送不同的请求。其实就类似<code>动态路由参数</code>。</p>
+<p>然而所有需要<code>展示缩略图的页面</code>，都需要通过修改缩略图链接得到<code>大图链接</code>，然后为了在preview页面展示（<strong>页面间数据共享</strong>），所以需要把<code>图片对象数组</code>存储在pinia仓库中，然后点击缩略图查看大图的时候（跳转到preview页面），就直接使用pinia中的数据。</p>
+<p>因为所有需要展示缩略图的页面<strong>不会同时存在</strong>，所以我们只设置一个<code>picList</code>，只需要确保当前处在<strong>某个展示缩略图的页面</strong>的时候，仓库中的<code>picList</code>中存储的是该页面的<code>图片对象数组</code>。</p>
+<pre class="language-js"><code class="language-js code-highlight"><span class="code-line line-number" line="1"><span class="token comment">//放在home页面，如果home页面没销毁则直接使用页面组件内的recommendList.value</span>
+</span><span class="code-line line-number" line="2"><span class="token comment">//如果页面组件被销毁，重新切换到home，由于这个操作会先于请求的数据到达被执行</span>
+</span><span class="code-line line-number" line="3"><span class="token comment">//所以最后存储进仓库的还是通过请求返回的数据</span>
+</span><span class="code-line line-number" line="4"><span class="token function">onShow</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token arrow operator">=&gt;</span> <span class="token punctuation">{</span>
+</span><span class="code-line line-number" line="5">    usePic<span class="token punctuation">.</span><span class="token method function property-access">setPicList</span><span class="token punctuation">(</span>recommendList<span class="token punctuation">.</span><span class="token property-access">value</span><span class="token punctuation">)</span>
+</span><span class="code-line line-number" line="6"><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</span></code></pre>
+<p>而且这样有个好处就是，<code>preview页面</code>不需要纠结到底应该从那个页面的picList中取数据展示，因为这些页面的<code>图片对象数组</code>都存储在picList中。</p>
+<h3>notice页面</h3>
+<p>主要用来展示公告详情的页面，大概也就是通过请求获取数据然后渲染页面，使用了<code>uni-dateformat</code>来格式化事件，使用<code>rich-text</code>组件来解析富文本。</p>
+<h3>preview页面</h3>
+<p>是这个<strong>项目功能最复杂</strong>的页面，实现了滑动，预览图片，查看图片详细信息，收藏图片，下载图片的功能。</p>
+<p>主要是基于大小占满整个页面的<code>swiper</code>轮播图组件实现的（不需要自动轮播，移除autoplay，interval属性）。</p>
+<p>有多个展示缩略图的页面，点击缩略图会都跳转到这里，从仓库中的<code>picList</code>中取数据（大图链接）来展示。</p>
+<p><strong>并且只渲染当前预览的图片和它左右的两张图片，减少了http请求的次数，图片的按需渲染的方式是通过<code>v-if</code>实现的。</strong></p>
+<pre class="language-html"><code class="language-html code-highlight"><span class="code-line line-number" line="1"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>swiper-item</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>(i,idx) in usePic.picList<span class="token punctuation">"</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>i._id<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+</span><span class="code-line line-number" line="2">     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>image</span> <span class="token attr-name">:src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>i.bigPic<span class="token punctuation">"</span></span> <span class="token attr-name">mode</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>aspectFill<span class="token punctuation">"</span></span>
+</span></span><span class="code-line line-number" line="3"><span class="token tag">          <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>index==idx||(index+1)%usePic.picList.length==idx||(idx+1)%usePic.picList.length==index<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>image</span><span class="token punctuation">&gt;</span></span>
+</span><span class="code-line line-number" line="4"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>swiper-item</span><span class="token punctuation">&gt;</span></span>
+</span></code></pre>
+<p>同时添加了遮罩层mask（显示时间和功能组件），但是又为了让mask不影响轮播图滑动，让mask的高度为0。</p>
+<p>图片详情信息被放在<code>uni-popup</code>组件中，给壁纸评分则是使用了<code>uni-popup</code>组件和<code>uni-icons</code>星标组件，评分好分后则发送请求到后端。</p>
+<p>然后下载功能是整个项目实现起来最难的功能，因为为了考虑到用户的各种选择并提供良好的提示，调用了多次<code>toast</code>还有<code>loading</code>，除此之外还有各种<strong>通过回调实现的异步api</strong>，导致代码可读性极其的差（回调函数地狱问题），我尽量<strong>使用了promise来优化代码的可读性。</strong></p>
+<p>如果是H5端提示长按图片保存。</p>
+<p>如果是非H5端，先获取图片的临时下载地址，再开始下载图片。</p>
+<p>下载图片的过程，如果是非H5端，会先询问是否授予下载权限，如果授予成功并确认下载则图片下载完毕，同步到服务器。</p>
+<p>如果授权失败或者取消下载，则下载失败。分析失败的原因，如果是取消下载，则提示“下载取消”，如果是授权失败，则提示用户给与下载权限，如果用户同意了，则打开权限设置面板。</p>
+<p><strong>关键的api</strong></p>
+<pre class="language-txt"><code class="language-txt code-highlight"><span class="code-line line-number" line="1">uni.getImageInfo({
+</span><span class="code-line line-number" line="2">      src: paperObj.value.bigPic,//可以是相对路径，临时文件路径，存储文件路径，网络图片路径
+</span><span class="code-line line-number" line="3">      success({
+</span><span class="code-line line-number" line="4">        path //图片的本地临时下载地址
+</span><span class="code-line line-number" line="5">      }) {//}
+</span><span class="code-line line-number" line="6">})
+</span><span class="code-line line-number" line="7">//H5不支持，微信小程序，app均支持，初次下载需要询问用户权限
+</span><span class="code-line line-number" line="8">uni.saveImageToPhotosAlbum({
+</span><span class="code-line line-number" line="9">	filePath:path,//图片的本地临时下载地，通过uni.getImageInfo得到
+</span><span class="code-line line-number" line="10">	success(){},
+</span><span class="code-line line-number" line="11">	fail(err){}//拒绝授权触发的回调函数，或者授权失败后无权限再下载的时候触发，或者取消下载也会触发
+</span><span class="code-line line-number" line="12">})
+</span><span class="code-line line-number" line="13">uni.openSetting({})//让用户设置权限，调起客户端小程序设置界面，返回用户设置的操作结果，配置属性只有那三个回调函数
+</span></code></pre>
+<h3>search页面</h3>
+<p>可以根据用户输入的<code>关键词</code>搜索图片，并保存搜索记录。</p>
+  </div>
+  </body>
+</html>
