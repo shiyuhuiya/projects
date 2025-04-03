@@ -1,8 +1,24 @@
 {
   "routes": [
     {
+      "src": "/bigEvent/assets/(.*)",
+      "dest": "/bigEvent/assets/$1"
+    },
+    {
+      "src": "/bigEvent/favicon.ico",
+      "dest": "/bigEvent/favicon.ico"
+    },
+    {
       "src": "/bigEvent/(.*)",
       "dest": "/bigEvent/index.html"
+    },
+    {
+      "src": "/rabbit/assets/(.*)",
+      "dest": "/rabbit/assets/$1"
+    },
+    {
+      "src": "/rabbit/favicon.ico",
+      "dest": "/rabbit/favicon.ico"
     },
     {
       "src": "/rabbit/(.*)",
